@@ -7,7 +7,7 @@ import { ethers } from 'ethers'
 import storage from '../contract/Storage.json'
 
 // Contract information
-const contractAddress = '0xe007843F7d8e737A2816d7b9CaE9C10CB7548B55'
+const contractAddress = '0x61C34f6C430DFD6Bcc14D5efCc18C7D799BEA5c6'
 const abi = storage.abi
 
 // Constants
@@ -123,12 +123,12 @@ function App() {
     return (
       <div>
         <p className="text-xl text-gray-400">
-          Click "write" or "read" to call the smart contract
+          Click "Store" or "Read" to call the smart contract
         </p>
         <div className="mt-8 inline-block text-left">
           <div className="text-left">
             <button onClick={store} className="btn-primary w-40 rounded-r-none">
-              Write number
+              Store
             </button>
             <input
               value={storeNumber}
@@ -141,7 +141,7 @@ function App() {
               onClick={retrieve}
               className="btn-primary w-40 mt-8 w-40 rounded-r-none"
             >
-              Read number
+              Read
             </button>
             <input
               placeholder="Retrieved number"
@@ -183,7 +183,7 @@ function App() {
                 </p>
               </div>
               <p className="my-3 text-4xl font-bold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
-                Dapp Starter
+                Fullstack Store Retrieve Dapp
               </p>
             </div>
           </div>
@@ -207,7 +207,7 @@ function App() {
           <a
             target="_blank"
             className="ml-2 text-mm  text-orange-400 hover:text-orange-600"
-            href="https://docs.coredao.org/developer/develop-on-core/using-core-testnet/connect-to-core-testnet"
+            href="https://harystyles.gitbook.io/core/articles/connect-metamask-to-the-core-testnet"
             rel="noreferrer"
           >
             MetaMask to Core Testnet

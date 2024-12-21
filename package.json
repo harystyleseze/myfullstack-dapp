@@ -1,5 +1,5 @@
 {
-  "name": "Tutorial",
+  "name": "myfullstack-dapp-frontend",
   "description": "This tutorial provides a step-by-step guide on how to store and retrieve data from the Core blockchain.",
   "version": "0.1.0",
   "private": true,
